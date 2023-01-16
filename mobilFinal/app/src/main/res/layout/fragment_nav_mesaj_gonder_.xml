@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nav_mesajGonder_Fragment"
+    android:background="@color/gray2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_baslik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:text="Mesaj Gönder"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mesajGonderGrup_rv"
+                android:layout_width="match_parent"
+                android:layout_height="166dp"
+                android:background="@color/gray2">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/mesajGonderGrup_secilenGrup_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Seçili Grup: "
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mesajGonderMesaj_rv"
+                android:layout_width="match_parent"
+                android:layout_height="305dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:background="@color/gray2">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/mesajGonder_secilenMesaj_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Seçili Mesaj: "
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/mesajGonder_Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Toplu Mesaj Gönder"
+                android:backgroundTint="@color/blue"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/adNumara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ogrenci"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+</FrameLayout>

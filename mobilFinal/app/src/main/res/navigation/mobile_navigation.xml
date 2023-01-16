@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_mesajGonder_Fragment">
+
+    <fragment
+        android:id="@+id/nav_mesajOlustur_Fragment"
+        android:name="com.example.mobilfinal.ui.home.HomeFragment"
+        android:label="Mesaj Oluştur"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_grupOlustur_Fragment"
+        android:name="com.example.mobilfinal.nav_grupOlustur_Fragment"
+        android:label="Grup Oluştur"
+        tools:layout="@layout/fragment_nav_grup_olustur_" />
+    <fragment
+        android:id="@+id/nav_uyeEkle_Fragment"
+        android:name="com.example.mobilfinal.nav_uyeEkle_Fragment"
+        android:label="Uye EKle"
+        tools:layout="@layout/fragment_nav_uye_ekle_" />
+    <fragment
+        android:id="@+id/nav_mesajGonder_Fragment"
+        android:name="com.example.mobilfinal.nav_mesajGonder_Fragment"
+        android:label="Mesaj Gönder"
+        tools:layout="@layout/fragment_nav_mesaj_gonder_" />
+</navigation>
